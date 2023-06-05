@@ -27,25 +27,25 @@ const Header: React.FC = () => {
         <li className="header__menu-item">
           <Link
             className={
-              location.pathname.substring(1) === 'base'
+              location.pathname.substring(1) === 'async'
                 ? 'header__menu-item-link header__menu-item--active'
                 : 'header__menu-item-link'
             }
-            to={'/base'}
+            to={'/async'}
           >
-            BASE
+            ASYNC
           </Link>
         </li>
         <li className="header__menu-item">
           <Link
             className={
-              location.pathname.substring(1) === 'about'
+              location.pathname.substring(1) === 'middlewares'
                 ? 'header__menu-item-link header__menu-item--active'
                 : 'header__menu-item-link'
             }
-            to={'/about'}
+            to={'/middlewares'}
           >
-            ABOUT
+            MIDDLEWARES
           </Link>
         </li>
       </ul>

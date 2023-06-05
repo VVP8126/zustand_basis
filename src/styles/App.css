@@ -63,6 +63,86 @@ body {
   padding-top: 50px;
   flex-grow: 1;
 }
+.main__title + .main__title {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
 .main__title {
   text-align: center;
 }
+.main__users {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+  border-top: 1px solid #202020;
+  border-bottom: 1px solid #202020;
+}
+.main__add-user,
+.main__user-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px 10px;
+}
+.main__user-list {
+  justify-content: start;
+}
+.main_input {
+  padding: 5px 10px;
+}
+.main_btn {
+  margin-top: 10px;
+  border: none;
+  background-color: #202020;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+}
+.main__user-list {
+  list-style-type: none;
+}
+.main__description {
+  padding: 10px;
+}
+.main__description > p {
+  padding-bottom: 10px;
+}
+.main__selected {
+  background-color: #202020;
+  color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+
+/* For async example */
+.async__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 20px;
+}
+.async__btn {
+  border: none;
+  background-color: #202020;
+  padding: 8px;
+  color: #fff;
+  width: 50%;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto;
+}
+.async__user-list {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.async__user-downloaded {
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+/* For middleware example */

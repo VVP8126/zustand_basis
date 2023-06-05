@@ -2,8 +2,8 @@ import React from 'react';
 import './styles/App.css';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Base from './pages/Base';
-import About from './pages/About';
+import Async from './pages/Async';
+import Middlewares from './pages/Middlewares';
 import SharedLayout from './layout/SharedLayout';
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />}></Route>
-          <Route path="base" element={<Base />}></Route>
-          <Route path="about" element={<About />}></Route>
+          <Route path="async" element={<Async />}></Route>
+          <Route path="middlewares" element={<Middlewares />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
