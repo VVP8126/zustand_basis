@@ -43,15 +43,15 @@ body {
   list-style-type: none;
   display: block;
   margin-left: 20px;
-  cursor: pointer;
-  opacity: 0.8;
-}
-.header__menu-item:hover {
-  opacity: 1;
 }
 .header__menu-item-link {
   text-decoration: none;
   color: #fff;
+  opacity: 0.8;
+}
+.header__menu-item--active,
+.header__menu-item:hover {
+  opacity: 1;
 }
 .footer {
   background-color: #202020;
