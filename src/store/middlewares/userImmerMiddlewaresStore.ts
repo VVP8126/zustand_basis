@@ -2,7 +2,7 @@ import { User } from '../../types/User';
 import { create } from 'zustand';
 import { immer } from 'zustand/middleware/immer'; // can work with store objects as in RTK
 
-interface UsersWithMiddlewaresState {
+interface UsersImmerMiddlewaresState {
   users: User[];
   isLoading: boolean;
   error: string;
@@ -11,7 +11,7 @@ interface UsersWithMiddlewaresState {
   fetchUsers: () => void;
 }
 
-export const useUsersWithMiddlewaresStore = create<UsersWithMiddlewaresState>()(
+export const useUsersImmerMiddlewaresStore = create<UsersImmerMiddlewaresState>()(
   immer((set) => ({
     users: [],
     isLoading: false,

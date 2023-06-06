@@ -107,7 +107,8 @@ body {
 .main__description > p {
   padding-bottom: 10px;
 }
-.main__selected {
+.main__selected,
+.persist__selected {
   background-color: #202020;
   color: #fff;
   padding: 4px;
@@ -146,3 +147,66 @@ body {
 }
 
 /* For middleware example */
+.mb-10 {
+  margin-bottom: 10px;
+}
+.middleware__persist-title {
+  text-align: center;
+  padding: 15px 0;
+}
+.middleware__persist-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.middleware__persist-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.middleware__persist-save-block {
+  display: flex;
+}
+.middleware__persist-icon {
+  padding: 7px;
+  background: #404040;
+  color: #fff;
+  min-width: 50px;
+  text-align: center;
+}
+.middleware__persist-input-field {
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+  outline: none;
+}
+.middleware__persist-input-field:focus {
+  border: 2px solid #404040;
+}
+.middleware__persist-btn {
+  background-color: #404040;
+  color: white;
+  padding: 7px 20px;
+  font-size: 11px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+.middleware__persist-btn:hover {
+  opacity: 0.8;
+}
+.middleware__persist-check-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.w-100 {
+  width: 100%;
+}
+.p-5 {
+  padding: 5px;
+}
