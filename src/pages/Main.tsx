@@ -31,10 +31,10 @@ const Main: React.FC = () => {
         <div className="main__add-user">
           <input value={val} onChange={onInputChange} className="main_input" />
           <button onClick={addNewUser} className="main_btn">
-            ADD USER
+            <i className="fa fa-user-plus" aria-hidden="true"></i>&#127;ADD USER
           </button>
           <button onClick={clear} className="main_btn">
-            CLEAR
+            <i className="fa fa-trash" aria-hidden="true"></i>&#127;CLEAR
           </button>
         </div>
         <ul className="main__user-list">

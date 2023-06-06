@@ -8,8 +8,8 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="header__logo-block">
-        <h1 className="logo">LO</h1>
-        <h1 className="logo">GO</h1>
+        <img src="img/teddy-bear-logo.svg" width={30} height={30} alt="LOGO" className="logo-img" />
+        <h1 className="logo">LOGO</h1>
       </div>
       <ul className="header__menu">
         <li className="header__menu-item">

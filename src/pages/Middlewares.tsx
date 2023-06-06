@@ -46,16 +46,26 @@ const Middlewares: React.FC = () => {
           <div className="main__add-user">
             <input value={val} onChange={onInputChange} className="main_input" />
             <button onClick={addNewUser} className="main_btn">
-              ADD USER
+              <i className="fa fa-user-plus" aria-hidden="true"></i>&#127; ADD USER
             </button>
             <button onClick={clear} className="main_btn">
-              CLEAR
+              <i className="fa fa-trash" aria-hidden="true"></i>&#127; CLEAR
             </button>
             <button onClick={fetchUsers} className="main_btn mb-10">
-              DOWNLOAD ALL
+              <i className="fa fa-download" aria-hidden="true"></i>
+              &#127;DOWNLOAD ALL
             </button>
-            {isLoading && <h4>Loading...</h4>}
-            {error && <h4>error</h4>}
+            {isLoading && (
+              <h4 className="main__title">
+                <i className="fa fa-spinner fa-spin" aria-hidden="true"></i>&#127;Loading...
+              </h4>
+            )}
+            {error && (
+              <h4 className="main__title">
+                <i className="fa fa-exclamation-triangle" aria-hidden="true"></i>&#127;Error:{' '}
+                {error}
+              </h4>
+            )}
           </div>
           <ul className="main__user-list">
             {users.length === 0 ? (
